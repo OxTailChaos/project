@@ -4,7 +4,10 @@ body{
     background-size: auto;
     background-repeat: no-repeat;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+}
 h1 {
     text-align: center;
     color: white;
@@ -104,8 +107,21 @@ nav ul a:hover {
    padding: 0px;
    margin: 0px;
    text-align: center;
-   
+   /* added code */
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
 }
+
+.mv iframe{
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+}
+
 
 p{
     font-family: 'Volkhov', serif;
@@ -115,27 +131,48 @@ p{
     background-image: url(
     ../img/synthesizer-908298_1280.jpg);
     background-size: cover;
-    float: left;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .vp{
     background-image: url(
     ../img/video-2562034_1920.jpg);
     background-size: cover;
-    float: right;
+     border: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .rs{
     background-image: url(
     ../img/sound-studio-911516_1920.jpg);
     background-size: cover;
-    float: left;
+     border: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .ar{
     background-image: url(
     ../img/office-1209640_1280.jpg);
     background-size: cover;
-    float: right;
+     border: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
+.services{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+@media only screen and (max-width 600px) {
+    nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
